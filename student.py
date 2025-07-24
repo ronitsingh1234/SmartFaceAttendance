@@ -510,7 +510,7 @@ class Student:
                 conn.close()
                 
                 #load predefinded data on face frontals from opencv=======
-                face_classifier = cv2.CascadeClassifier("haarcascade_frontalface_default.xml")
+                face_classifier = cv2.CascadeClassifier(r"C:\Users\Ronit Singh\Desktop\Python\FACE RECOGNITION\haarcascade_frontalface_default.xml")
                
                 def face_cropped(img):
                     gray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
@@ -530,7 +530,7 @@ class Student:
                         img_id+=1
                         face=cv2.resize(face_cropped(my_frame),(450,450))
                         face=cv2.cvtColor(face,cv2.COLOR_BGR2GRAY)
-                        file_name_path="face_data/user."+str(id)+"."+str(img_id)+".jpg"
+                        file_name_path=r"C:\Users\Ronit Singh\Desktop\Python\FACE RECOGNITION\face_data/user."+str(id)+"."+str(img_id)+".jpg"
                         cv2.imwrite(file_name_path,face)
                         cv2.putText(face,str(img_id),(50,55),cv2.FONT_HERSHEY_COMPLEX,2,(0,255,0),2)
                         cv2.imshow("Cropped Face",face)
