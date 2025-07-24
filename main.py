@@ -4,7 +4,7 @@ from tkinter import messagebox
 from PIL import Image , ImageTk
 from student import Student
 from train import Train
-from facerecognition import facerecognition
+from facerecognition import FaceRecognition
 from attendance import Attendance
 from developer import Developer
 from help import Help
@@ -147,7 +147,7 @@ class Face_Attendance_System:
     
     def facerecognition(self):
         self.new_window = Toplevel(self.win)
-        self.app = facerecognition(self.new_window)
+        self.app = FaceRecognition(self.new_window)
     
     def attendance(self):
         self.new_window = Toplevel(self.win)
