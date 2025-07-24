@@ -59,7 +59,7 @@ class Train:
         # train the classifier and save
         clf = cv2.face.LBPHFaceRecognizer_create()
         clf.train(faces,ids)
-        clf.write("classifier.xml")
+        clf.write(r"C:\Users\Ronit Singh\Desktop\Python\FACE RECOGNITION\classifier.xml")
         cv2.destroyAllWindows()
         messagebox.showinfo("Result","Training datasets completed!")
         
