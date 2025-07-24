@@ -1,3 +1,5 @@
+
+![image alt](https://github.com/ronitsingh1234/SmartFaceAttendance/blob/main/Screenshot%202025-07-24%20130729.png?raw=true)
 Description:
 This is the main GUI window of the Face Recognition Attendance System, built using Tkinter. It serves as the homepage with buttons for key functionalities like:
 
