@@ -38,23 +38,9 @@ When clicked, it uses the images stored in the dataset folder to train a face re
 
 
 
-
-Description:
-This is the "Attendance" window, which displays the attendance log in tabular form.
-It shows records such as:
-Student ID
-Name
-Time
-Date
-Attendance status
-It fetches data from a CSV file where attendance is automatically marked when a known face is detected.
-
 ![image alt](https://github.com/ronitsingh1234/SmartFaceAttendance/blob/main/Screenshot%202025-07-24%20131123.png?raw=true)
 Description:
 This screenshot shows the "Photos" button functionality, which opens the file explorer to the folder where all captured images (data/ or dataset/) are stored. This directory contains the training images for each student.
-Description:
-This shows the real-time face recognition process.
-When the face recognition module is run, it detects and identifies registered faces using the trained model. If a match is found, it displays the student’s name and ID on the screen and logs attendance.
 
 
 ![image alt](https://github.com/ronitsingh1234/SmartFaceAttendance/blob/main/Screenshot%202025-07-24%20131143.png?raw=true)
@@ -67,11 +53,7 @@ Progress of the training process
 Helpful during development and troubleshooting.
 
 ![image alt](https://github.com/ronitsingh1234/SmartFaceAttendance/blob/main/Screenshot%202025-07-24%20131200.png?raw=true)
-Description:
-This is a FileNotFoundError traceback.
-It indicates that the system failed to locate the image file data/user.1.3.jpg. This can happen if:
-The image was never captured
-The file was deleted
-The dataset folder path is incorrect
-This error emphasizes the need to ensure proper dataset generation before training.
+ Description:
+This shows the real-time face recognition process.
+When the face recognition module is run, it detects and identifies registered faces using the trained model. If a match is found, it displays the student’s name and ID on the screen and logs attendance.
 
